@@ -9,6 +9,11 @@
     display: flex;
   }
 
+  .content{
+    display: flex;
+    flex-direction: row;
+  }
+
   div.scrollmenu  {
       width: 60%;
       height: 10vh;
@@ -34,10 +39,12 @@
     text-align: left;
     font-weight: bold;
     font-size: large;
-
   }
   .right {
     text-align: right;
+  }
+  .button>a{
+    color: white;
   }
   .button {
     background-color: #506690; /* Green */
@@ -54,7 +61,7 @@
       display: flex;
       flex-flow: row;
   }
+  
   .content{
-      display: flex;
-      flex-flow: column;
+    flex-direction: column;
   }
