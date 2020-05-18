@@ -120,7 +120,8 @@
 }
 span.cata-title {
   color: #161c2d;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
 }
 .cata-title-more {
   font-size: 1.2rem;
@@ -380,7 +381,7 @@ span.cata-title {
   box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.05) !important;
   border-radius: 1rem;
   width: 394px;
-  height: 615px;
+  
   position: relative;
 }
 .login-form-background-img {
@@ -397,6 +398,7 @@ span.cata-title {
   color: #869ab8;
   font-weight: lighter;
 }
+
 /* .login-input a {
   padding: 0 2rem;
 } */
@@ -404,8 +406,12 @@ span.cata-title {
   border-bottom: 1px solid #ddd;
   padding: 15px;
 }
+.login-input-item p{
+  color: red;
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
 .login-input-bt {
- 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -483,66 +489,82 @@ span.cata-title {
 /* close login check box */
 
 /* ex-container */
-.ex-container{
+.ex-container {
   display: flex;
   flex-direction: row;
-  
+  margin: 3rem 0;
   width: 100%;
 }
-.ex-content{
+.ex-content {
   width: 50%;
 }
-.ex-content-col{
+.ex-content-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.ex-content-title .cata-title{
+  font-weight: lighter;
+ font-size: 2rem;
+}
+.ex-content-title .sp-Landkit{
+  font-size: 2rem;
+  font-weight: lighter;
+ }
+.ex-content-col {
   width: 100%;
   display: flex;
   flex-direction: row;
-  
 }
-.ex-icon{
-  
+.ex-icon {
   display: flex;
   justify-content: center;
   padding-top: 1rem;
 }
-.ex-icon >svg{
+.ex-icon > svg {
   width: 3rem;
   height: 3rem;
 }
-.ex-title{
+.ex-title {
   margin-left: 1rem;
   font-weight: lighter;
 }
-.ex-img-container{
-  max-width: 50%;
+.ex-img-container {
+  width: 50%;
 }
-.ex-relative{
+.ex-relative {
   position: relative;
   width: 130%;
   height: 100%;
 }
-.ex-img-shape{
+.ex-img-shape {
   width: 100%;
-  color:#f1f4f8;
+  color: #f1f4f8;
   position: absolute;
   top: 0;
   bottom: 0;
-
 }
-.ex-img-shape svg{
+.ex-img-shape svg {
   width: auto;
   height: 100%;
 }
-.ex-img-skewed{
+.ex-img-skewed {
   perspective: 1500px;
 }
-.ex-img-skewed
+.ex-img-skewed img{
+  transform: rotateY(-35deg) rotateX(15deg);
+  border-radius: .625rem;
+  box-shadow: 25px 60px 125px -25px rgba(80,102,144,.1), 16px 40px 75px -40px rgba(0,0,0,.2)
+}
+
 
 /* close ex-container */
 
 @media screen and (max-width: 1285px) {
   .login-form {
     width: 365px;
-    height: 583px;
+   
   }
   .login-form-background-img {
     width: 365px;
@@ -592,10 +614,9 @@ span.cata-title {
     width: 100%;
   }
   .check-box {
-    
   }
   .small-login-text {
-    font-size: 1.5rem!important;
+    font-size: 1.5rem !important;
   }
   /* .login-content {
     padding-left: 30px;
@@ -604,6 +625,27 @@ span.cata-title {
     height: auto;
     min-width: 200px;
 } */
+}
+
+@media screen and (max-width: 1000px) {
+  .ex-content-title .cata-title{
+    font-size: 1.5rem;
+    line-height: 1.35;
+  }
+  .ex-content-title .sp-Landkit {
+    font-size: 1.5rem!important;
+}
+.cata-title-more {
+  font-size: 1.065rem;
+}
+.ex-title {
+  margin-left: 1.065rem;
+}
+.ex-img-skewed img{
+  width: 390px;
+  height: 292px;
+  margin: 2rem 0;
+}
 }
 @media screen and (max-width: 1119px) {
   .hidden-menu {
@@ -725,27 +767,39 @@ span.cata-title {
   .catalog-item {
     width: 100%;
   }
-  .login-container{
+  .login-container {
     flex-direction: column-reverse;
     align-items: center;
   }
- 
-  .login-form-background-img{
-    height:  333.55px;
+
+  .login-form-background-img {
+    height: 333.55px;
     width: 100%;
   }
   .login-input-button {
-   
   }
-  .login-form{
+  .login-form {
     margin-top: 40px;
     width: 80%;
   }
-  .check-box{
+  .check-box {
     padding-left: 0;
   }
-  .login-content{
+  .login-content {
     max-width: 99%;
     min-width: 150px;
+  }
+  .ex-container{
+    flex-direction: column;
+  }
+  .ex-content{
+    width: 100%;
+  }
+  .ex-img-container{
+    width: 100%;
+  }
+  .ex-img-skewed img{
+    width: 70%;
+    height: auto;
   }
 }

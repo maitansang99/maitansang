@@ -379,31 +379,32 @@
       </div>
 
       <div class="login-container">
-        <form class="login-form">
+        <form class="login-form" onsubmit="renderInfo(event);" >
           <div class="login-form-background-img">
-          
         </div>
-        
-        
-        
-        
           <div class="login-input">
             <div class="login-input-item">
-              <input type="text" name="name" placeholder="Name ">
-            
+              <input class="enter" id="name" type="text" name="name" placeholder="Name ">
+              <p id="validateName"></p>
           </div>
           <div class="login-input-item">
-            <input type="text" name="email" placeholder="Email ">
-            
+            <input class="enter" id="email" type="text" name="email" placeholder="Email ">
+            <p id="validateEmail"></p>
           </div>
           <div class="login-input-item">
-            <input type="password" name="password" placeholder="Password ">
-            
+            <input class="enter" id="password" type="password" name="password" placeholder="Password ">
+            <p id="validatePassword"></p>
           </div>
-            <div class="login-input-bt">
+          <p id= "success"></p>
+            <div id="bt-download"  class="login-input-bt">
               <input class="login-input-button" type="submit" value="Download a sample">
+              
+            </div>
+            
+            
           </div>
-          </div>
+         
+
         </form>
         
 
@@ -454,16 +455,22 @@
     
        <div class="ex-container">
         <div class="ex-content">
-          <p>
-            We have lots of experience
-            building Bootstrap themes.
-            <span>
+          <div class="ex-content-title">
+            <span class="cata-title">
+              We have lots of experience
+          </span>
+          
+            <span class="sp-Landkit ">
+              building Bootstrap themes.
+          </span>
+          <br/>
+            <span class="cata-title-more">
               We've built well over a dozen Bootstrap
               themes and sold 
               tens of thousands of copies.
 
             </span>
-          </p>
+          </div>
          
           <div class="ex-content-row">
             
@@ -477,6 +484,7 @@
               <span class="cata-title">
               Bootstrap users since the beginning
                </span>
+               <br/>
 
               <span class="cata-title-more">We've been developing with Bootstrap since it was publicly released in 2011. </span>
             </p>
@@ -491,7 +499,7 @@
               <div class="ex-title">
               <p>
                 <span class="cata-title"> understanding of Bootstrap</span>
-                
+                <br/>
                 <span class="cata-title-more">We've watched Bootstrap grow up over the years and understand it better than almost anyone.</span>
               </p>
             </div>
@@ -594,6 +602,8 @@ keeping your components up to date. Let us do that for you.
 
 
       </div>
-  
+  <script src="baitap.js">
+    
+  </script>
   </body>
 </html>
