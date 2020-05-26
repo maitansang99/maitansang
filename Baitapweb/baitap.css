@@ -665,6 +665,7 @@ span.cata-title {
 
   font-size: 60px;
   color: rgba(44, 85, 219, 0.979);
+  cursor: pointer;
 }
 .oc-slide-arrow a i {
   cursor: pointer;

@@ -377,8 +377,8 @@
        
       </div>
 
-      <div class="login-container">
-        <form class="login-form" onsubmit="renderInfo(event);" >
+      <div class="login-container" >
+        <form id="validateJquery" method="POST" class="login-form" onsubmit="renderInfo(event);" >
           <div class="login-form-background-img">
         </div>
           <div class="login-input">
@@ -396,7 +396,7 @@
           </div>
           <p id= "success"></p>
             <div id="bt-download"  class="login-input-bt">
-              <input class="login-input-button" type="submit" value="Download a sample">
+              <input id="login" class="login-input-button" type="submit" value="Download a sample">
               
             </div>
             
@@ -534,19 +534,16 @@
          </div>
 
          <div class="oc-slide-container">
-          <div class="oc-slide-arrow left">
-            <a class="prev" onclick="showSlides(-1)">
+          
+            <a class="oc-slide-arrow left prev" onclick="showSlide(-1)">
               <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
-            </a>
-          </div>
-
-          <div class="oc-slide-arrow right">
-            <a class="next" onclick="showSlides(1)">
+            </a>      
+            <a class="oc-slide-arrow right next" onclick="showSlide(1)">
               <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
             </a>
-          </div>
+          
            <div id="oc-transform" class="oc-widthx2">     
-             <!-- <div class="oc-slide-item"></div>       -->
+           
             <div id="slide-item1" class="oc-slide-item">
               <div class="oc-slide">
                 <div class="oc-slide-img fade">
@@ -602,12 +599,7 @@
                 </div>
                 
               </div>
-            </div>
-
-
-           
-
-         
+            </div>     
         </div>
        </div>
        </div>
@@ -944,5 +936,10 @@ keeping your components up to date. Let us do that for you.
   <script src="baitap.js">
     
   </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" type="text/javascript"></script>
+
+  <script src="baitap-jquery.js"></script>
+
   </body>
 </html>
